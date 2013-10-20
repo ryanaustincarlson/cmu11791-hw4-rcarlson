@@ -5,6 +5,14 @@
 	<artifactId>hw4-rcarlson</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<scm>
+		<connection>scm:git:git@github.com:ryanaustincarlson/cmu11791-hw4-rcarlson.git
+		</connection>
+		<developerConnection>
+			scm:git:git@github.com:ryanaustincarlson/cmu11791-hw4-rcarlson.git
+		</developerConnection>
+	</scm>
+
 	<repositories>
 		<repository>
 			<id>oaqa</id>
