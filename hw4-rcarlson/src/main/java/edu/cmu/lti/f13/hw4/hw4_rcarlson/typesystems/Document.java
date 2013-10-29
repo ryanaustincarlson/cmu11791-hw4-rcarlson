@@ -12,8 +12,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Fri Oct 11 01:58:03 EDT 2013
- * XML source: /home/diwang/ur-workspace/hw4-rcarlson/src/main/resources/descriptors/typesystems/VectorSpaceTypes.xml
+ * Updated by JCasGen Sun Oct 20 19:19:49 EDT 2013
+ * XML source: /Users/rcarlson/local/eclipse-workspaces/software-engineering/cmu11791-hw4-rcarlson/hw4-rcarlson/src/main/resources/descriptors/typesystems/VectorSpaceTypes.xml
  * @generated */
 public class Document extends Annotation {
   /** @generated
@@ -133,6 +133,24 @@ public class Document extends Annotation {
     if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_tokenList == null)
       jcasType.jcas.throwFeatMissing("tokenList", "edu.cmu.lti.f13.hw4.hw4_rcarlson.typesystems.Document");
     jcasType.ll_cas.ll_setRefValue(addr, ((Document_Type)jcasType).casFeatCode_tokenList, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: score
+
+  /** getter for score - gets Score assigned to a document. Used in ranking.
+   * @generated */
+  public double getScore() {
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "edu.cmu.lti.f13.hw4.hw4_rcarlson.typesystems.Document");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Document_Type)jcasType).casFeatCode_score);}
+    
+  /** setter for score - sets Score assigned to a document. Used in ranking. 
+   * @generated */
+  public void setScore(double v) {
+    if (Document_Type.featOkTst && ((Document_Type)jcasType).casFeat_score == null)
+      jcasType.jcas.throwFeatMissing("score", "edu.cmu.lti.f13.hw4.hw4_rcarlson.typesystems.Document");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Document_Type)jcasType).casFeatCode_score, v);}    
   }
 
     

@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Fri Oct 11 01:58:03 EDT 2013
+ * Updated by JCasGen Sun Oct 20 19:19:49 EDT 2013
  * @generated */
 public class Document_Type extends Annotation_Type {
   /** @generated */
@@ -115,6 +115,24 @@ public class Document_Type extends Annotation_Type {
     ll_cas.ll_setRefValue(addr, casFeatCode_tokenList, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_score;
+  /** @generated */
+  final int     casFeatCode_score;
+  /** @generated */ 
+  public double getScore(int addr) {
+        if (featOkTst && casFeat_score == null)
+      jcas.throwFeatMissing("score", "edu.cmu.lti.f13.hw4.hw4_rcarlson.typesystems.Document");
+    return ll_cas.ll_getDoubleValue(addr, casFeatCode_score);
+  }
+  /** @generated */    
+  public void setScore(int addr, double v) {
+        if (featOkTst && casFeat_score == null)
+      jcas.throwFeatMissing("score", "edu.cmu.lti.f13.hw4.hw4_rcarlson.typesystems.Document");
+    ll_cas.ll_setDoubleValue(addr, casFeatCode_score, v);}
+    
+  
 
 
 
@@ -139,6 +157,10 @@ public class Document_Type extends Annotation_Type {
  
     casFeat_tokenList = jcas.getRequiredFeatureDE(casType, "tokenList", "uima.cas.FSList", featOkTst);
     casFeatCode_tokenList  = (null == casFeat_tokenList) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_tokenList).getCode();
+
+ 
+    casFeat_score = jcas.getRequiredFeatureDE(casType, "score", "uima.cas.Double", featOkTst);
+    casFeatCode_score  = (null == casFeat_score) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_score).getCode();
 
   }
 }
